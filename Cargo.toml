@@ -1,0 +1,18 @@
+[package]
+name = "mcp_server_wiro"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license = "MIT"
+
+[lib]
+path = "src/mcp_server_wiro.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+schemars = "1"
+serde = { version = "1", features = ["derive"] }
+zed_extension_api = "0.7.0"
+
+[dev-dependencies]
+serde_json_lenient = "0.2"

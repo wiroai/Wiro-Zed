@@ -1,0 +1,13 @@
+id = "mcp-server-wiro"
+name = "Wiro AI MCP Server"
+description = "Search, price and run 1,000+ AI models, workflows and agents from Wiro AI in the Agent Panel."
+version = "0.1.0"
+schema_version = 1
+authors = ["Wiro AI"]
+repository = "https://github.com/wiroai/Wiro-Zed"
+
+[context_servers.mcp-server-wiro]
+
+[[capabilities]]
+kind = "npm:install"
+package = "@wiro-ai/wiro-mcp"
