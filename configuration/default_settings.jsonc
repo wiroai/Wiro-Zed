@@ -1,9 +1,8 @@
 {
   /// API key of your Wiro AI project.
   "wiro_api_key": "",
-  /// API secret of the same project. Needed only for a project with
-  /// signature-based authentication; leave it empty otherwise.
+  /// API secret, only for signature-based projects.
   "wiro_api_secret": "",
-  /// Optional: load only some tool groups. All of them load by default.
+  /// Optional: tool groups to load. Default: all.
   // "toolsets": ["models", "workflows", "agents"]
 }
