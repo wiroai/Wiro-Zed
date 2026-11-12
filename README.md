@@ -12,6 +12,8 @@ Use Wiro AI from Zed's Agent Panel: search 1,000+ image, video, audio and LLM mo
 
 This [Zed](https://zed.dev) extension adds the official [Wiro AI MCP server](https://github.com/wiroai/Wiro-MCP) to Zed. Zed downloads the server, [`@wiro-ai/wiro-mcp`](https://www.npmjs.com/package/@wiro-ai/wiro-mcp), from npm and runs it with the Node.js runtime it manages itself, so there is nothing else to install. Each time the server starts, the extension checks npm for a newer version.
 
+![Zed's Agent Panel running a Wiro AI image model and showing the result](docs/screenshots/agent-panel-model-run.png)
+
 ## Install
 
 1. In Zed, open the command palette, run `zed: extensions`, search for **Wiro AI MCP Server** and click **Install**. You can also open **Settings → AI → MCP Servers**, click **Add Server** and choose **Install from Extensions**.
@@ -64,6 +66,8 @@ With all groups loaded, the server gives the Agent Panel 50 tools:
 | `workflows` or `agents` | `send_agent_message`, `get_agent_message`, `get_agent_conversation`, `cancel_agent_message`, `delete_agent_session`, `list_studio_results`, `save_workflow_from_agent` |
 
 `workflows` also loads the model tools a workflow needs: `search_models`, `get_model_schema`, `recommend_model` and `upload_file`. What each tool does is described in the [Wiro MCP server README](https://github.com/wiroai/Wiro-MCP#available-tools). The server also offers four MCP prompts: `build_workflow`, `deploy_agent`, `create_with_studio` and `talk_to_my_agent`.
+
+![Wiro AI model tools in the Configure MCP Tools list of Zed's Agent Panel](docs/screenshots/agent-panel-tools.png)
 
 ## Try it
 
